@@ -1,0 +1,88 @@
+DIR = listar todos arquivos dentro do meu computador. ### linux LS
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+CD / = Entrar nas pastas
+ex:
+cd / windows ##Entrar na pasta windows## ## Se usar o DIR depois ele mostra tudo que tem dentro dessa pasta##
+
+CD .. = Voltar 
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+CLS = limpar o CMD     ## linux CLEAR ou ctrl + L
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+TECLA TAB = Auto completar
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+MKDIR = criar pastas
+ex:
+mkdir workspace
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+echo = para criar coisas
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+DEL = Deleta arquivos dentro de uma pasta(repositorio)                     ########linux rm
+del workspace ##Deleta tudo que esta dentro de workspace##
+
+RMDIR = Deleta a pasta inteira                                             ######## linux rf
+ex:
+rmdir workspace ## Deleta o workspace inteiro ##
+
+
+ls # mostra todos arquivos dentro da pasta no git bash
+
+ls -a # mostra todos arquivos ocultos
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+openssl sha1 = abrir um arquivo sha1
+
+Sistema Distribuido Seguro:
+	todo objeto dentro do Git tem um codigo unico, caso seja feito qualquer alteração esse codigo sera mudado.
+	
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@	IMPORTANTE @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+CHAVES & TOKENS:
+
+	Chave Ssh, forma de fazer uma conexao segura com git, atravez de dupla autenticação.
+	
+	ssh-keygen -t ed25519 -C eric.degan@gmail.com <-- aqui eu gerei uma chave para minha maquina, assinatura de maquina.
+	
+	(c/Users/USER/.ssh/id_ed25519):  <-- caminho da minha chave.
+	(c/Users/USER/.ssh/id_ed25519.pub) <-- senha
+	 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIwqSDogEHCaOz59v5tzeKMOEtFB4tZTzEFK7o8XM0Fp eric.degan@gmail.com <-- codigo chave publica
+	 
+	 
+	 $ eval $(ssh-agent -s) <--- Iniciando um projeto
+		pid 1988
+			ssh-add id_ed25519
+			
+		
+	
+		
+
+	
+---------------------------------------------------------------------------------------------------------------------
+Markdown == Baixar Typera
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	
+Iniciar o Git:
+	git init
+	
+Iniciar o Versionamento:
+	git add
+
+Criar um Commit:
+	git commit
+	
+Verificar arquivos:
+	git status
